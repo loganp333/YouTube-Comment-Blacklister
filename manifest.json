@@ -2,7 +2,7 @@
     "name": "YouTube Comment Blacklister",
     "version": "1.0",
     "description": "Will hide YouTube comments that contain user chosen blacklisted words.",
-    "permissions": ["storage", "activeTab", "https://youtube.com/*"],
+    "permissions": ["storage", "activeTab", "<all_urls>"],
 
     "browser_action": {
         "default_popup": "popup/popup.html"
@@ -10,7 +10,7 @@
 
     "content_scripts": [
         {
-          "matches": ["https://youtube.com/*"],
+          "matches": ["<all_urls>"],
           "js": ["src/experiment.js"]
         }
       ],
