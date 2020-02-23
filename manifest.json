@@ -1,0 +1,33 @@
+{
+    "name": "YouTube Comment Blacklister",
+    "version": "1.0",
+    "description": "Will hide YouTube comments that contain user chosen blacklisted words.",
+    "permissions": ["storage", "activeTab", "https://youtube.com/*"],
+
+    "browser_action": {
+        "default_popup": "popup/popup.html"
+    },
+
+    "content_scripts": [
+        {
+          "matches": ["https://youtube.com/*"],
+          "js": ["src/experiment.js"]
+        }
+      ],
+
+    "background": {
+        "scripts": [
+          "src/background.js"
+        ],
+        "persistent": false
+      },
+
+    "icons": {
+        "16": "images/x_bubble16.png",
+        "48": "images/x_bubble48.png",
+        "128": "images/x_bubble128.png"
+    },
+
+
+    "manifest_version": 2
+  }
