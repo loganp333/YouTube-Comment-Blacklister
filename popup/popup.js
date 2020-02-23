@@ -1,6 +1,8 @@
 (function() {
     chrome.storage.local.get('blockedWords', function (result) {
-        setTimeout(function(){document.getElementById("blockedWords").value = result.blockedWords}, 500);
+        if (result.blockedWords != undefined) {
+            setTimeout(function(){document.getElementById("blockedWords").value = result.blockedWords}, 500);
+        }
     });
 
 })();
