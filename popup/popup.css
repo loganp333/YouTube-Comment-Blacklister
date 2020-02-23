@@ -1,0 +1,28 @@
+html, body {
+    height: 450px;
+    width: 450px;
+    text-align: center;
+    padding-bottom: 7px;
+}
+
+#topHeader {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #375B7F;
+}
+
+#blockedWords {
+    margin-left: 50px;
+    width: 350;
+}
+
+p {
+    padding-top: 7px;
+    padding-bottom: 5px;
+}
+
+#updateBtn {
+    padding-top: 7px;
+    width: 250px;
+    padding-top: 7px;
+}
