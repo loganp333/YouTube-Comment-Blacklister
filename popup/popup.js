@@ -8,7 +8,8 @@
 })();
 
 const updateWords = () => {
-    let words = document.getElementById("blockedWords").value.split(', ');
+    let words = document.getElementById("blockedWords").value;
+    //chrome.extension.getBackgroundPage().console.log(`wordss: ${words}`);
     chrome.storage.local.set({blockedWords: words});
 };
 
