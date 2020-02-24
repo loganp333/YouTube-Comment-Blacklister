@@ -19,6 +19,9 @@ html, body {
 p {
     padding-top: 7px;
     padding-bottom: 5px;
+    padding-left: 29px;
+    padding-right: 29px;
+    margin-left: auto;
 }
 
 #updateBtn {
