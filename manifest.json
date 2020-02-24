@@ -1,6 +1,6 @@
 {
     "name": "YouTube Comment Blacklister",
-    "version": "1.0",
+    "version": "3.0",
     "description": "Will hide YouTube comments that contain user chosen blacklisted words.",
     "permissions": ["storage", "activeTab", "<all_urls>"],
 
