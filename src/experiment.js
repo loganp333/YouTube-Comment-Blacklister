@@ -1,5 +1,6 @@
 chrome.storage.local.get('blockedWords', function (result) {
-    blackListed = result.blockedWords;
+    blackListed = result.blockedWords.split(', ');
+    console.log(blackListed);
 });
 function deleteComments() {
     var rootParent;
